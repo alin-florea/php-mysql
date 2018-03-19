@@ -40,6 +40,8 @@ sudo ansible-playbook -i hosts lamp-playbook.yml
 
 Ex.2:
 docker-compose up --build -d
+sudo netstat -lpn |grep :3306
+sudo kill pid
 
 ###Configurari ansible.cfg
 inventory      = /home/alin/Ansible/ansible-lamp-stack-playbook/hosts
