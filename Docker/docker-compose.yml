@@ -1,0 +1,20 @@
+web:
+  build: app/
+  command: php -S 0.0.0.0:80 -t /app
+  links:
+    - db
+  ports:
+    - "80:80"
+  volumes:
+    - ./app:/app
+db:
+  build: data/
+  ports:
+    - "3306:3306"
+  volumes:
+    - ./data:/var/lib/mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: mysql
+    MYSQL_USER: "alin"
+    MYSQL_PASSWORD: "admin"
+    MYSQL_DATABASE: "data"
