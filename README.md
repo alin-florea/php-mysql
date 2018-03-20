@@ -30,6 +30,6 @@ Infrastructure with Docker
             -apt-get install vim
             -apt-get install docker -y ; apt-get install docker.io -y ; apt-get install docker-compose -y ;
 
-            -sudo netstat -lpn |grep :3306/80
-            -sudo kill -9 pid 3306/80
+            -netstat -lpn |grep :3306/80
+            -kill -9 pid 3306/80
             -docker-compose up --build -d
