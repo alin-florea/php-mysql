@@ -37,7 +37,7 @@ RUN set -x \
         php7.0-xmlrpc -y \
         php7.0-xsl -y \
         php7.0-bz2 -y \
-        php-pear -y \
+        php-pearl -y \
         php-apcu -y \
         php-redis -y \
         php-memcached -y \
